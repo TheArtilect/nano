@@ -63,4 +63,10 @@ loop = media.Movie("In The Loop",
 
 #fear.show_trailer()
 movies = [goodfellas, aliens, predator, terminator, stargate, loop]
-fresh_tomatoes.open_movies_page(movies)
+#fresh_tomatoes.open_movies_page(movies)
+
+
+#print(media.Movie.VALID_RATINGS)
+print(media.Movie.__doc__)
+print(media.Movie.__name__)
+print(media.Movie.__module__)
