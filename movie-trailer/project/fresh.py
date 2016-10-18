@@ -113,10 +113,12 @@ main_page_content = '''
         </div>
       </div>
     </div>
-    <div class="container">
+    <div class="container text-center">
+        <h2>My Favorite Movies</h2>
       {movie_tiles}
     </div>
-    <div class="container">
+    <div class="container text-center">
+        <h2>My Favorite Shows</h2>
       {show_tiles}
     </div>
   </body>
