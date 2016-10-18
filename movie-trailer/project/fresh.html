@@ -72,7 +72,7 @@
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
-          $('.movie-tile').hide().first().show("fast", function showNext() {
+          $('.movie-tile').first().show("fast", function showNext() {
             $(this).next("div").show("fast", showNext);
           });
         });
@@ -148,6 +148,16 @@
     </div>
     <div class="container">
       
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_mucMCddPy0" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Stargateposter.jpg/220px-Stargateposter.jpg" width="220" height="342">
+    <h2>Stargate</h2>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="zNE0dlHcmgA" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Aliens_poster.jpg/220px-Aliens_poster.jpg" width="220" height="342">
+    <h2>Aliens</h2>
+</div>
+
     </div>
   </body>
 </html>

@@ -78,7 +78,7 @@ main_page_head = '''
         });
         // Animate in the movies when the page loads
         $(document).ready(function () {
-          $('.movie-tile').hide().first().show("fast", function showNext() {
+          $('.movie-tile').first().show("fast", function showNext() {
             $(this).next("div").show("fast", showNext);
           });
         });
@@ -160,7 +160,7 @@ def open_movies_page(movies, shows):
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
-        show_tiles=create_movie_tiles_content([]),
+        show_tiles=create_movie_tiles_content(shows),
         movie_tiles=create_movie_tiles_content(movies))
 
     # Output the file
