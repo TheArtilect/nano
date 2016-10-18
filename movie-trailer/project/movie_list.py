@@ -73,6 +73,10 @@ stargate = movie.Movie("Stargate",
 '''
 
 
-movies = [wonder, goodfellas, loop, predator, professional, terminator]
+movies = [goodfellas, loop, stargate, professional,
+            predator, aliens,
+            godfather, wonder]
 
-fresh.open_movies_page(movies)
+shows = [stargate, aliens]
+
+fresh.open_movies_page(movies, shows)
