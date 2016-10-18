@@ -17,7 +17,7 @@ class Movie(video.Video):
     #    webbrowser.open(self.trailer)
 
 
-class TVShow(video.Video):
+class Show(video.Video):
     ''' This class if for storing information for my favorite TV shows, a child of video '''
 
     def __init__(self, title, storyline, poster, trailer, seasons, network):

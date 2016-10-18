@@ -72,13 +72,34 @@ stargate = movie.Movie("Stargate",
 
 '''
 
+breaking = movie.Show("Breaking Bad",
+                        "A high school chemistry teacher with terminal cancer turns to crime to provide for his family",
+                        "https://upload.wikimedia.org/wikipedia/en/thumb/6/61/Breaking_Bad_title_card.png/250px-Breaking_Bad_title_card.png",
+                        "https://www.youtube.com/watch?v=XZ8daibM3AE",
+                        "5",
+                        "American Movie Classics")
 
-movies = [goodfellas, loop, stargate, professional,
+venture = movie.Show("The Venture Bros.",
+                        "A scientist and former boy adventurer, along with his sons and bodyguard tangle paths with supervillians.",
+                        "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/The_Venture_Bros_logo.svg/250px-The_Venture_Bros_logo.svg.png",
+                        "https://www.youtube.com/watch?v=ctlC0x2eeww",
+                        "6",
+                        "Adult Swim")
+
+sunny = movie.Show("It's Always Sunny in Philadelphia",
+                        "Five friends who own a bar get into misadventures.",
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/IASIPTC.png/250px-IASIPTC.png",
+                        "https://www.youtube.com/watch?v=ctlC0x2eeww",
+                        "11",
+                        "FX")
+
+
+movies = [goodfellas, stargate, terminator,
             predator, aliens,
-            godfather, wonder]
+            godfather]
 
-shows = [stargate]
+shows = [venture, sunny, breaking]
 
-recommend = [loop]
+recommend = [loop, professional, wonder]
 
 fresh.open_movies_page(movies, shows, recommend)

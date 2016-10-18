@@ -122,8 +122,13 @@ main_page_content = '''
         </div>
       </div>
     </div>
-    <div class="container text-center center">
-        <h2 class="fav-h2">Movie of the Month</h2>
+    <div class="container text-center">
+        <h2>Welcome to Fresh!</h2> 
+        <p>A place for movies, shows, and recommendations.</p>
+
+    </div>
+    <div class="container text-center">
+        <h2 class="fav-h2">Movies of the Month</h2>
       {recommend_tile}
     </div>
     <div class="container text-center">
