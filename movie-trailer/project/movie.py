@@ -1,7 +1,10 @@
 import webbrowser
 
-class Movie():
-    ''' This class is for storing information for movies '''
+
+import video
+
+class Movie(video.Video):
+    ''' This class is for storing information for movies, a child of video '''
 
     def __init__(self, title, storyline, poster, trailer):
         self.title = title
@@ -10,6 +13,17 @@ class Movie():
         self.trailer= trailer
 
 
-    def play_trailer(self):
-        webbrowser.open(self.trailer)
-        
+    #def play_trailer(self):
+    #    webbrowser.open(self.trailer)
+
+
+class TVShow(video.Video):
+    ''' This class if for storing information for my favorite TV shows, a child of video '''
+
+    def __init__(self, title, storyline, poster, trailer, seasons, network):
+        self.title = title
+        self.storyline = storyline
+        self.poster = poster
+        self.trailer = trailer
+        self.seasons = seasons
+        self.network = network
