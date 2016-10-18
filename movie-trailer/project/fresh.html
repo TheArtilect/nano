@@ -14,6 +14,8 @@
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            background-color: black;
+            color: white;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -29,6 +31,12 @@
         #trailer-video {
             width: 100%;
             height: 100%;
+        }
+        #show-container{
+            margin-top: 50px;
+        }
+        .fav-h2{
+            font-weight: bold;
         }
         .movie-tile {
             margin-bottom: 20px;
@@ -80,6 +88,7 @@
 </head>
 
   <body>
+
     <!-- Trailer Video Modal -->
     <div class="modal" id="trailer">
       <div class="modal-dialog">
@@ -98,66 +107,70 @@
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh</a>
+            <a class="navbar-brand" href="https://ian-agpawa.herokuapp.com" target="_blank">Fresh</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="container text-center">
-        <h2>My Favorite Movies</h2>
+    <div class="container text-center center">
+        <h2 class="fav-h2">Movie of the Month</h2>
       
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="qo5jJpHtI1Y" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Goodfellas.jpg/220px-Goodfellas.jpg" width="220" height="342">
-    <h2>Goodfellas</h2>
-</div>
-
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_VDc7-YH1LA" data-toggle="modal" data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/01/In_the_Loop_poster.jpg/220px-In_the_Loop_poster.jpg" width="220" height="342">
-    <h2>In The Loop</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_mucMCddPy0" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Stargateposter.jpg/220px-Stargateposter.jpg" width="220" height="342">
-    <h2>Stargate</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="aNQqoExfQsg" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Leon-poster.jpg/220px-Leon-poster.jpg" width="220" height="342">
-    <h2>The Professional</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="K9AT3tQGbIk" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Predator_Movie.jpg/220px-Predator_Movie.jpg" width="220" height="342">
-    <h2>Predator</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="zNE0dlHcmgA" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Aliens_poster.jpg/220px-Aliens_poster.jpg" width="220" height="342">
-    <h2>Aliens</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="fB_8VCwXydM" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg" width="220" height="342">
-    <h2>The Godfather</h2>
-</div>
-
-<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="sveK_fhIqhs" data-toggle="modal" data-target="#trailer">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/68/OriginalWBposter.jpg/220px-OriginalWBposter.jpg" width="220" height="342">
-    <h2>Wonderboys</h2>
+    <h4>In The Loop</h4>
 </div>
 
     </div>
     <div class="container text-center">
-        <h2>My Favorite Shows</h2>
+        <h2 class="fav-h2">My Favorite Movies</h2>
       
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="qo5jJpHtI1Y" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/7/7b/Goodfellas.jpg/220px-Goodfellas.jpg" width="220" height="342">
+    <h4>Goodfellas</h4>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_VDc7-YH1LA" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/01/In_the_Loop_poster.jpg/220px-In_the_Loop_poster.jpg" width="220" height="342">
+    <h4>In The Loop</h4>
+</div>
+
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_mucMCddPy0" data-toggle="modal" data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Stargateposter.jpg/220px-Stargateposter.jpg" width="220" height="342">
-    <h2>Stargate</h2>
+    <h4>Stargate</h4>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="aNQqoExfQsg" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Leon-poster.jpg/220px-Leon-poster.jpg" width="220" height="342">
+    <h4>The Professional</h4>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="K9AT3tQGbIk" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Predator_Movie.jpg/220px-Predator_Movie.jpg" width="220" height="342">
+    <h4>Predator</h4>
 </div>
 
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="zNE0dlHcmgA" data-toggle="modal" data-target="#trailer">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Aliens_poster.jpg/220px-Aliens_poster.jpg" width="220" height="342">
-    <h2>Aliens</h2>
+    <h4>Aliens</h4>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="fB_8VCwXydM" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg" width="220" height="342">
+    <h4>The Godfather</h4>
+</div>
+
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="sveK_fhIqhs" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/68/OriginalWBposter.jpg/220px-OriginalWBposter.jpg" width="220" height="342">
+    <h4>Wonderboys</h4>
+</div>
+
+    </div>
+    <div id='show-container' class="container text-center">
+        <h2 class="fav-h2">My Favorite Shows</h2>
+      
+<div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="_mucMCddPy0" data-toggle="modal" data-target="#trailer">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Stargateposter.jpg/220px-Stargateposter.jpg" width="220" height="342">
+    <h4>Stargate</h4>
 </div>
 
     </div>

@@ -77,6 +77,8 @@ movies = [goodfellas, loop, stargate, professional,
             predator, aliens,
             godfather, wonder]
 
-shows = [stargate, aliens]
+shows = [stargate]
 
-fresh.open_movies_page(movies, shows)
+recommend = [loop]
+
+fresh.open_movies_page(movies, shows, recommend)

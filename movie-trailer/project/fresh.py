@@ -20,6 +20,8 @@ main_page_head = '''
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            background-color: black;
+            color: white;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -35,6 +37,12 @@ main_page_head = '''
         #trailer-video {
             width: 100%;
             height: 100%;
+        }
+        #show-container{
+            margin-top: 50px;
+        }
+        .fav-h2{
+            font-weight: bold;
         }
         .movie-tile {
             margin-bottom: 20px;
@@ -90,6 +98,7 @@ main_page_head = '''
 # The main page layout and title bar
 main_page_content = '''
   <body>
+
     <!-- Trailer Video Modal -->
     <div class="modal" id="trailer">
       <div class="modal-dialog">
@@ -108,17 +117,21 @@ main_page_content = '''
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
           <div class="navbar-header">
-            <a class="navbar-brand" href="#">Fresh</a>
+            <a class="navbar-brand" href="https://ian-agpawa.herokuapp.com" target="_blank">Fresh</a>
           </div>
         </div>
       </div>
     </div>
-    <div class="container text-center">
-        <h2>My Favorite Movies</h2>
-      {movie_tiles}
+    <div class="container text-center center">
+        <h2 class="fav-h2">Movie of the Month</h2>
+      {recommend_tile}
     </div>
     <div class="container text-center">
-        <h2>My Favorite Shows</h2>
+        <h2 class="fav-h2">My Favorite Movies</h2>
+      {movie_tiles}
+    </div>
+    <div id='show-container' class="container text-center">
+        <h2 class="fav-h2">My Favorite Shows</h2>
       {show_tiles}
     </div>
   </body>
@@ -130,7 +143,7 @@ main_page_content = '''
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <img src="{poster_image_url}" width="220" height="342">
-    <h2>{movie_title}</h2>
+    <h4>{movie_title}</h4>
 </div>
 '''
 
@@ -156,14 +169,15 @@ def create_movie_tiles_content(movies):
     return content
 
 
-def open_movies_page(movies, shows):
+def open_movies_page(movies, shows, recommend):
     # Create or overwrite the output file
     output_file = open('fresh.html', 'w')
 
     # Replace the movie tiles placeholder generated content
     rendered_content = main_page_content.format(
+        movie_tiles=create_movie_tiles_content(movies),
         show_tiles=create_movie_tiles_content(shows),
-        movie_tiles=create_movie_tiles_content(movies))
+        recommend_tile=create_movie_tiles_content(recommend))
 
     # Output the file
     output_file.write(main_page_head + rendered_content)
