@@ -49,7 +49,6 @@ main_page_head = '''
             padding-top: 20px;
         }
         .movie-tile:hover {
-            background-color: #777;
             cursor: pointer;
             opacity: 0.3;
         }
@@ -74,6 +73,8 @@ main_page_head = '''
             // reliable way to ensure the video stops playing in IE
             $("#trailer-video-container").empty();
         });
+
+
         // Start playing the video whenever the trailer modal is opened
         $(document).on('click', '.movie-tile', function (event) {
             var trailerYouTubeId = $(this).attr('data-trailer-youtube-id')
@@ -117,9 +118,20 @@ main_page_content = '''
     <div class="container">
       <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="https://ian-agpawa.herokuapp.com" target="_blank">Fresh</a>
-          </div>
+
+          <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a class="dropdown-toggle navbar-brand" data-toggle="dropdown" href="#">Fresh
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#recommended">Recommended</a></li>
+                  <li><a href="#movies">Movies</a></li>
+                  <li><a href="#shows">Shows</a></li>
+                  <li><a href="https://ian-agpawa.herokuapp.com" target="_blank">Contact Me</a></li>
+                </ul>
+              </li>
+          </ul>
+
         </div>
       </div>
     </div>
@@ -129,14 +141,17 @@ main_page_content = '''
 
     </div>
     <div class="container text-center">
+        <a id="recommended"></a>
         <h2 class="fav-h2">Movies of the Month</h2>
       {recommend_tile}
     </div>
     <div class="container text-center">
+        <a id="movies"></a>
         <h2 class="fav-h2">My Favorite Movies</h2>
       {movie_tiles}
     </div>
     <div id='show-container' class="container text-center">
+        <a id="shows"></a>
         <h2 class="fav-h2">My Favorite Shows</h2>
       {show_tiles}
     </div>
@@ -152,14 +167,8 @@ movie_tile_content = '''
         <img src="{poster_image_url}" width="220" height="342">
         <h4>{movie_title}</h4>
     </div>
+
 '''
-
-
-#    <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-#        <img src="{poster_image_url}" width="220" height="342">
-#        <h4>{movie_title}</h4>
-#    </div>
-
 
 
 
