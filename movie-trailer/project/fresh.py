@@ -44,6 +44,11 @@ main_page_head = '''
         .fav-h2{
             font-weight: bold;
         }
+        #movie-container,
+        #show-container,
+        #recommended-container{
+            margin-top: 75px;
+        }
         .movie-tile {
             margin-bottom: 20px;
             padding-top: 20px;
@@ -140,12 +145,12 @@ main_page_content = '''
         <p>These are a few of my favorite movies and shows</p>
 
     </div>
-    <div class="container text-center">
+    <div class="container text-center" id="recommended-container">
         <a id="recommended"></a>
         <h2 class="fav-h2">Movies of the Month</h2>
       {recommend_tile}
     </div>
-    <div class="container text-center">
+    <div class="container text-center" id='movie-container'>
         <a id="movies"></a>
         <h2 class="fav-h2">My Favorite Movies</h2>
       {movie_tiles}
