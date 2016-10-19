@@ -54,19 +54,55 @@ aliens = movie.Movie("Aliens",
                     "Space marines battle aliens.",
                     "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Aliens_poster.jpg/220px-Aliens_poster.jpg",
                     "https://www.youtube.com/watch?v=zNE0dlHcmgA")
-
-
-
+                    
 
 
 stargate = movie.Movie("Stargate",
                         "A team travels to an alien planet.",
                         "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Stargateposter.jpg/220px-Stargateposter.jpg",
                         "https://www.youtube.com/watch?v=_mucMCddPy0")
+                        
+                        
+                        
+breathless = movie.Movie("Breathless",
+                        "A gripping look into child abuse and crime through the lense of a gangster.",
+                        "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Breathless-affiche1.jpg/399px-Breathless-affiche1.jpg",
+                        "https://www.youtube.com/watch?v=9zzcGQkuTs4")
+
+memories = movie.Movie("Memories of a Murder",
+                        "Detectives in a rural town try to catch a serial killer running amok.",
+                        "https://upload.wikimedia.org/wikipedia/en/1/17/Memories_of_Murder_poster.jpg",
+                        "https://www.youtube.com/watch?v=NtOutxGJK5o")
+                        
+chaser = movie.Movie("The Chaser",
+                    "A pimp tries to save one of his girls from a serial killer.",
+                    "http://static.rogerebert.com/uploads/movie/movie_poster/the-chaser-2010/large_fz21JutOmrdU5qJw7QitInEueWG.jpg",
+                    "https://www.youtube.com/watch?v=ai0GambXj-s"
+                    )
+
+yellow = movie.Movie("The Yellow Sea",
+                    "A gambler in debt must kill a man to break free.",
+                    "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/The_Yellow_Sea-p3.jpg/220px-The_Yellow_Sea-p3.jpg",
+                    "https://www.youtube.com/watch?v=YoyKIBiCb7Y")
+                    
+devil = movie.Movie("I Saw The Devil",
+                    "A man seeks revenge for his wife's murder.",
+                    "https://upload.wikimedia.org/wikipedia/en/6/69/Isawthedevil.jpg",
+                    "https://www.youtube.com/watch?v=xwWgp1bqVwE")
+                    
+waking = movie.Movie("Waking Life",
+                    "An existentialist journey through quirky vignettes.",
+                    'https://upload.wikimedia.org/wikipedia/en/9/98/Waking-Life-Poster.jpg',
+                    "https://www.youtube.com/watch?v=uk2DeTet98o")
+                    
+event = movie.Movie("Event Horizon",
+                    "A crew find a space ship that was lost for years, and find much more waiting for them.",
+                    "https://upload.wikimedia.org/wikipedia/en/8/8c/Event_horizon_ver1.jpg",
+                    "https://www.youtube.com/watch?v=OVlnER8SxfQ")
 
 
 '''
-    breathless, i saw the devil, chaser, something of a murder, waking life, slc punk, eternal sunshine
+    , waking life, slc punk, eternal sunshine
 
     breaking bad, the walking dead, lost, vikings, venture brothers, it's always sunny, zrock, the wire,
 
@@ -94,12 +130,12 @@ sunny = movie.Show("It's Always Sunny in Philadelphia",
                         "FX")
 
 
-movies = [goodfellas, stargate, terminator,
-            predator, aliens,
-            godfather]
+movies = [goodfellas, fear, stargate, terminator,
+            predator, aliens, professional, godfather, breathless, memories, 
+            wonder, loop, waking]
 
 shows = [venture, sunny, breaking]
 
-recommend = [loop, professional, wonder]
+recommend = [devil, yellow, event]
 
 fresh.open_movies_page(movies, shows, recommend)
