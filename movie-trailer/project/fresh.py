@@ -124,7 +124,7 @@ main_page_content = '''
     </div>
     <div class="container text-center">
         <h2>Welcome to Fresh!</h2> 
-        <p>A place for movies, shows, and recommendations.</p>
+        <p>These are a few of my favorite movies and shows</p>
 
     </div>
     <div class="container text-center">
