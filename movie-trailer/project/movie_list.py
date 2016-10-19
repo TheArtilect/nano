@@ -38,29 +38,34 @@ predator = visual.Movie("Predator",
 godfather = visual.Movie("The Godfather",
                         "A master piece of cinema",
                         "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
-                        "https://www.youtube.com/watch?v=fB_8VCwXydM")
+                        "https://www.youtube.com/watch?v=oAfWMr26KQk")
 
 
-wonder = visual.Movie("Wonderboys",
-                    "An author has a mid-life crisis.",
-                    "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/OriginalWBposter.jpg/220px-OriginalWBposter.jpg",
-                    "https://www.youtube.com/watch?v=sveK_fhIqhs")
+outrage = visual.Movie("Outrage",
+                    "A splice of the life of yakuza.",
+                    "https://upload.wikimedia.org/wikipedia/en/f/f4/Outrage-2010-poster.png",
+                    "https://www.youtube.com/watch?v=3Fj3htxRRHM")
 
 
 aliens = visual.Movie("Aliens",
                     "Space marines battle aliens.",
                     "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Aliens_poster.jpg/220px-Aliens_poster.jpg",
                     "https://www.youtube.com/watch?v=zNE0dlHcmgA")
-                    
+
 
 
 stargate = visual.Movie("Stargate",
                         "A team travels to an alien planet.",
                         "https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Stargateposter.jpg/220px-Stargateposter.jpg",
                         "https://www.youtube.com/watch?v=_mucMCddPy0")
-                        
-                        
-                        
+
+big = visual.Movie("Big Trouble in Little China",
+                    "Jack Burton saves the day.",
+                    "https://upload.wikimedia.org/wikipedia/en/7/76/Big_Trouble_in_Little_China_Film_Poster.jpg",
+                    "https://www.youtube.com/watch?v=592EiTD2Hgo")
+
+
+
 breathless = visual.Movie("Breathless",
                         "A gripping look into child abuse and crime through the lense of a gangster.",
                         "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Breathless-affiche1.jpg/399px-Breathless-affiche1.jpg",
@@ -70,7 +75,7 @@ memories = visual.Movie("Memories of a Murder",
                         "Detectives in a rural town try to catch a serial killer running amok.",
                         "https://upload.wikimedia.org/wikipedia/en/1/17/Memories_of_Murder_poster.jpg",
                         "https://www.youtube.com/watch?v=NtOutxGJK5o")
-                        
+
 chaser = visual.Movie("The Chaser",
                     "A pimp tries to save one of his girls from a serial killer.",
                     "http://static.rogerebert.com/uploads/movie/movie_poster/the-chaser-2010/large_fz21JutOmrdU5qJw7QitInEueWG.jpg",
@@ -81,17 +86,17 @@ yellow = visual.Movie("The Yellow Sea",
                     "A gambler in debt must kill a man to break free.",
                     "https://upload.wikimedia.org/wikipedia/en/thumb/0/04/The_Yellow_Sea-p3.jpg/220px-The_Yellow_Sea-p3.jpg",
                     "https://www.youtube.com/watch?v=YoyKIBiCb7Y")
-                    
+
 devil = visual.Movie("I Saw The Devil",
                     "A man seeks revenge for his wife's murder.",
                     "https://upload.wikimedia.org/wikipedia/en/6/69/Isawthedevil.jpg",
                     "https://www.youtube.com/watch?v=xwWgp1bqVwE")
-                    
+
 waking = visual.Movie("Waking Life",
                     "An existentialist journey through quirky vignettes.",
                     'https://upload.wikimedia.org/wikipedia/en/9/98/Waking-Life-Poster.jpg',
-                    "https://www.youtube.com/watch?v=uk2DeTet98o")
-                    
+                    "https://www.youtube.com/watch?v=SbPgprcMtjo")
+
 event = visual.Movie("Event Horizon",
                     "A crew find a space ship that was lost for years, and find much more waiting for them.",
                     "https://upload.wikimedia.org/wikipedia/en/8/8c/Event_horizon_ver1.jpg",
@@ -110,6 +115,11 @@ tenenbaums = visual.Movie("The Royal Tenenbaums",
                         "An intimate look inside the world of a quirky family.",
                         "https://upload.wikimedia.org/wikipedia/en/3/3b/The_Tenenbaums.jpg",
                         "https://www.youtube.com/watch?v=lmOWfJXQzP8")
+
+assassins = visual.Movie("13 Assassins",
+                    "Samurai and ronin must kill a government official for the sake of the nation.",
+                    "https://upload.wikimedia.org/wikipedia/en/f/fd/Thirteen_Assassins.jpg",
+                    "https://www.youtube.com/watch?v=NgPC74-Tde8")
 
 
 #shows
@@ -132,18 +142,18 @@ venture = visual.Show("The Venture Bros.",
 sunny = visual.Show("It's Always Sunny in Philadelphia",
                         "Five friends who own a bar get into misadventures.",
                         "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/IASIPTC.png/250px-IASIPTC.png",
-                        "https://www.youtube.com/watch?v=ctlC0x2eeww",
+                        "https://www.youtube.com/watch?v=XgAKMICbha0",
                         "11",
                         "FX")
-                        
+
 zrock = visual.Show("Z Rock",
                     "A rock band tries to make it.",
-                    "https://www.youtube.com/watch?v=GCSUknJzzBw",
                     "https://upload.wikimedia.org/wikipedia/en/0/0f/Z_Rock_logo.jpg",
+                    "https://www.youtube.com/watch?v=GCSUknJzzBw",
                     "2",
                     "IFC")
-                    
-                    
+
+
 wire = visual.Show("The Wire",
                 "A gritty look inside the world of drug dealers and the police who pursue them set in Baltimore.",
                 "https://upload.wikimedia.org/wikipedia/en/6/62/The_Wire.jpg",
@@ -154,19 +164,19 @@ wire = visual.Show("The Wire",
 walking = visual.Show("The Walking Dead",
                     "An exploration of humanity in a post-apocalyptic world full of zombies and people just as dead.",
                     "https://upload.wikimedia.org/wikipedia/en/1/17/The_Walking_Dead_title_card.jpg",
-                    "https://www.youtube.com/watch?v=GJRNHAJAcYg",
+                    "https://www.youtube.com/watch?v=sfAc2U20uyg",
                     "8",
                     "AMC")
-                
 
 
 
-movies = [goodfellas, fear, memories, loop, tenenbaums, slc, stargate, terminator,
-            predator, aliens, professional, godfather, breathless, 
-            sunshine, wonder, waking]
+
+movies = [goodfellas, fear, big, memories, outrage, yellow, loop, tenenbaums,
+            slc, stargate, terminator, predator, aliens, professional, assassins,
+            breathless, sunshine, waking]
 
 shows = [venture, sunny, breaking, zrock, wire, walking]
 
-recommend = [devil, yellow, event]
+recommend = [devil, event, chaser]
 
 fresh.open_movies_page(movies, shows, recommend)
