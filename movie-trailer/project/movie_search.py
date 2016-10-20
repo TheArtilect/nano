@@ -11,3 +11,13 @@ def get_movie(movie, youtube):
     plot = movie_info[u'Plot']
     poster = movie_info[u'Poster']
     return visual.Movie(title, plot, poster, youtube)
+
+
+def get_show(show, youtube):
+        url = "https://www.omdbapi.com/?t=" + show + "&plot=short&r=json"
+        show_info = requests.get(url).json()
+        title = show_info[u'Title']
+        plot = show_info[u'Plot']
+        poster = show_info[u'Poster']
+        seasons = show_info[u'totalSeasons']
+        return visual.Show(title, plot, poster, youtube, seasons)

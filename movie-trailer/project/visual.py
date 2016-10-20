@@ -1,6 +1,5 @@
 import webbrowser
 
-
 from video import Video
 
 
@@ -21,10 +20,9 @@ class Movie(Video):
 class Show(Video):
     ''' This class if for storing information for my favorite TV shows, a child of video '''
 
-    def __init__(self, title, storyline, poster, trailer, seasons, network):
+    def __init__(self, title, storyline, poster, trailer, seasons):
         self.title = title
         self.storyline = storyline
         self.poster = poster
         self.trailer = trailer
         self.seasons = seasons
-        self.network = network

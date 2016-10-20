@@ -142,7 +142,9 @@ main_page_content = '''
     </div>
     <div class="container text-center">
         <h2>Welcome to Fresh!</h2>
-        <p>These are a few of my favorite movies and shows</p>
+        <h4>Movies, Shows, and Recommendations!!</h4>
+        <p>This website utilizes the OMBDb API for movie and show info.</p>
+
 
     </div>
     <div class="container text-center" id="recommended-container">
