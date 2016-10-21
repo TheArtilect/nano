@@ -47,7 +47,7 @@ main_page_head = '''
         #movie-container,
         #show-container,
         #recommended-container{
-            margin-top: 75px;
+            margin-top: 60px;
         }
         .movie-tile {
             margin-bottom: 20px;

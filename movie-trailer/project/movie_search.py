@@ -2,7 +2,7 @@ import requests
 import visual
 
 
-# Using OMBDb API for movie and show info
+# Using OMBDb API for movie and show info, no api key needed
 
 #  Generate movie object
 def get_movie(movie, youtube):
