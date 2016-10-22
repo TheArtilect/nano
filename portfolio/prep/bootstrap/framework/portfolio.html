@@ -1,19 +1,32 @@
 <!DOCTYPE html>
 <html>
+
   <head>
+    <meta char='utf-9'>
+    <meta name="viewport" content='width=device-width, initial-scale=1'>
+    <meta author="Ian Agpawa">
+    <title>Ian Agpawa Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
   </head>
+
   <body>
     <div class="container">
 
       <div class="row">
 
         <div class="col-md-6">
-            <img src="http://placehold.it/100x100">
+            <img class="title-logo img-responsive" src="http://placekitten.com/100/100" alt='placeholder'>
         </div>
 
-        <div class="col-md-6">
-          <h1>Ian Agpawa</h1>
+        <div class="col-md-6 text-right text-uppercase">
+          <h1 class="title-super text-thin">Ian Agpawa</h1>
           <h3>Web Developer</h3>
         </div>
 
@@ -23,7 +36,8 @@
 
       <div class="row">
         <div class="col-md-12">
-          <img src="http://placehold.it/1140x350">
+          <hr>
+          <img class="img-responsive" src="http://placekitten.com/1140/350" alt='placeholder'>
         </div>
       </div>
 
@@ -31,34 +45,69 @@
 
       <div class="row">
         <div class="col-md-12">
-          <h2>Featured Work</h2>
+          <h2 class="text-muted">Featured Work</h2>
         </div>
       </div>
 
-      <div class="row">
+      <div class="row text-center">
+
         <div class="col-md-6">
-          <img src="http://placehold.it/555x300">
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt='placeholder' data-toggle="modal" data-target="#project1">
+          <h3>HERE</h3>
+          <p><a href="http://github.com">Link to project</a></p>
+        </div>
+
+        <div class="col-md-6">
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt='placeholder'>
           <h3>Appify</h3>
           <p><a href="http://github.com">Link to project</a></p>
         </div>
-        <div class="col-md-6">
-          <img src="http://placehold.it/555x300">
-          <h3>Appify</h3>
-          <p><a href="http://github.com">Link to project</a></p>
-        </div>
+
       </div>
-      <div class="row">
-        <div class="col-md-6">
-          <img src="http://placehold.it/555x300">
+
+
+      <div class="row text-center">
+
+        <div class="col-md-4">
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt='placeholder'>
           <h3>Appify</h3>
           <p><a href="http://github.com">Link to project</a></p>
         </div>
-        <div class="col-md-6">
-          <img src="http://placehold.it/555x300">
+
+        <div class="col-md-4">
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt='placeholder'>
           <h3>Appify</h3>
           <p><a href="http://github.com">Link to project</a></p>
         </div>
+
+        <div class="col-md-4">
+          <img class="img-responsive" src="http://placekitten.com/555/300" alt='placeholder'>
+          <h3>Appify</h3>
+          <p><a href="http://github.com">Link to project</a></p>
+        </div>
+
       </div>
+
     </div>
+
+
+    <!-- Modal -->
+  <div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h4 class="modal-title" id="myModalLabel">Favorite App Page</h4>
+              </div>
+              <div class="modal-body">
+                  <img class="img-responsive" src="http://placekitten.com/555/300">
+                  This was my first project in this class. I learned a lot about HTML and CSS.
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
   </body>
 </html>
