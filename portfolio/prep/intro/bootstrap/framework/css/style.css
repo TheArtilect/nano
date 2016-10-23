@@ -4,6 +4,9 @@ body {
   font-weight: 300;
 }
 
+img, embed, object, video {
+    max-width: 100%;
+}
 
 .text-mited{
   color: #8CBBBB;
