@@ -20,11 +20,18 @@ article {
   max-width: 50em;
 }
 
-h1 {
+@media screen and (min-width: 800px){
+  article {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
+h1 {
+  margin-left: calc(33.33%)
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 
 }
