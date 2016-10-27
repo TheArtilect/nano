@@ -1,16 +1,10 @@
-/*
+@import url(http://weloveiconfonts.com/api/?family=zocial);
 
-Your styles go here!
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
 
-Hint! You'll probably want to start by styling:
-  * <body>
-  * <article>
-  * <h1>
-  * <img>
-
-I've left some boilerplate below for you.
-
-*/
 
 body {
 
@@ -18,6 +12,7 @@ body {
 
 article {
   max-width: 50em;
+  border-bottom: 1px solid black;
 }
 
 @media screen and (min-width: 800px){
