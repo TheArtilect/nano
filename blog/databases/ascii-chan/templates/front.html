@@ -61,7 +61,7 @@
         <hr>
         {% for art in arts %}
             <div class="art">
-                <div class="art-title">{{arts.get()}}</div>
+                <div class="art-title">{{art.key().id()}}</div>
                 <div class="art-title">{{art.title}}</div>
                 <pre class="art-body">{{art.art}}</pre>
             </div>
