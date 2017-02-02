@@ -28,4 +28,15 @@ def adding_up(array, k):
 array = [1,4,8,8]
 k = 10
 
-print adding_up(array, k)
+def compliment(array, k):
+    for x in range(len(array) - 1):
+        last = array.pop()
+        if (k - last) in array:
+            return True
+    return False
+
+zarray = [2,3,5,6,8,14,20]
+zk = 7
+
+print compliment(array, k)
+print compliment(zarray, zk)
