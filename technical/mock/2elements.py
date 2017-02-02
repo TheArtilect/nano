@@ -28,6 +28,7 @@ def adding_up(array, k):
 array = [1,4,8,8]
 k = 10
 
+#array should be sorted
 def compliment(array, k):
     for x in range(len(array) - 1):
         last = array.pop()
