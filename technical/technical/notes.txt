@@ -1,0 +1,28 @@
+Knapsack problem
+-Optimization problem
+A number of objects with different weights and values need to fit into a bag with a weight limit to maximize value.
+
+Brute Force Solution
+O(2^n) exponential time, not polynomial (i.e. O(3n))
+n = number of objects
+
+Faster solution
+table of weights and values
+O(nW)
+
+
+Dynamic Programming
+Problem: Max value for weight limit
+Subproblem: Max value for some smaller weight
+
+Base Case: Smallest computation (compute values for one object)
+
+Value at weight limit = value of current object + value in table at (weight limit - current object)
+
+
+
+
+Traveling salesman problem
+Cities are nodes, roads are edges between them, what's the fastest way for salesman to travel to every city and return home?
+
+NP-Hard no polynomial time
